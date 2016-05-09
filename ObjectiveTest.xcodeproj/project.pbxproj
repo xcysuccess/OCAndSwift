@@ -13,6 +13,7 @@
 		9A7A24D11CE0CA770088620C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7A24CF1CE0CA770088620C /* Main.storyboard */; };
 		9A7A24D31CE0CA770088620C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7A24D21CE0CA770088620C /* Assets.xcassets */; };
 		9A7A24D61CE0CA770088620C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7A24D41CE0CA770088620C /* LaunchScreen.storyboard */; };
+		9A7A24DF1CE0CAA30088620C /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A24DE1CE0CAA30088620C /* SwiftTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9A7A24D21CE0CA770088620C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7A24D51CE0CA770088620C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7A24D71CE0CA770088620C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7A24DD1CE0CAA20088620C /* ObjectiveTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A7A24DE1CE0CAA30088620C /* SwiftTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				9A7A24D41CE0CA770088620C /* LaunchScreen.storyboard */,
 				9A7A24D71CE0CA770088620C /* Info.plist */,
 				9A7A24C61CE0CA770088620C /* Supporting Files */,
+				9A7A24DD1CE0CAA20088620C /* ObjectiveTest-Bridging-Header.h */,
+				9A7A24DE1CE0CAA30088620C /* SwiftTest.swift */,
 			);
 			path = ObjectiveTest;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				9A7A24CE1CE0CA770088620C /* ViewController.m in Sources */,
 				9A7A24CB1CE0CA770088620C /* AppDelegate.m in Sources */,
 				9A7A24C81CE0CA770088620C /* main.m in Sources */,
+				9A7A24DF1CE0CAA30088620C /* SwiftTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ObjectiveTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mqq.tomxiang.ObjectiveTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveTest/ObjectiveTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -276,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ObjectiveTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mqq.tomxiang.ObjectiveTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveTest/ObjectiveTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -302,6 +315,7 @@
 				9A7A24DC1CE0CA770088620C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

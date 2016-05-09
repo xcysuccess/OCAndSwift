@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+@objc(SwiftTest)
+
+class SwiftTest : NSObject {
+    func test()->NSString{
+        let vc = ViewController()
+        vc.test()
+        
+        return "test"
+    }
+}
